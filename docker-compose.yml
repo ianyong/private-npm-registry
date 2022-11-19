@@ -4,6 +4,7 @@ services:
   npm-registry:
     image: verdaccio/verdaccio
     container_name: "npm-registry"
+    restart: always
     networks:
       - npm-registry-network
     environment:
